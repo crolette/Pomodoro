@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Crolweb" />
+    <meta name="description" content="Pomodoro" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/6cf87d1226.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>App Pomodoro</h1>
+      <div class="inputs">
+          <div class="input__timer">
+              <label for="input__work">Temps de travail à chaque session (par tranche de 15min) ?</label>
+              <input type="number" name="input__work" id="input__work" min="15" max="90" step="15" placeholder="15 min">
+          </div>
+          <div class="input__timer">
+              <label for="input__pause">Durée de la pause entre chaque session de travail (par 5min) ?</label>
+              <input type="number" name="input__pause" id="input__pause" min="5" max="60" step="5" placeholder="5 min">
+          </div>
+      </div>
+      <div class="timers">
+        <div class="timer timer__work">
+            <p>Travail</p>
+            <p class="timer__work__time">15:00</p>
+        </div>
+        <div class="timer timer__pause">
+            <p>Pause</p>
+            <p class="timer__pause__time">5:00</p>
+        </div>
+      </div>
+
+      <div class="btns">
+        <button class="btn start">Commencer</button>
+        <button class="btn pause">Pause</button>
+        <button class="btn reset">Reset</button>
+      </div>
+    </div>
+
+    <script src="pomodoro.js"></script>
+  </body>
+</html>
